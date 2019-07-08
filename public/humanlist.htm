@@ -1,0 +1,24 @@
+	<div class="" ng-init="init()">
+		<div class="text-center">
+			<h1>Human List</h1>
+		</div>
+		<table id="row" class="table  table-hover" >
+		  <thead>
+			<tr role="row">
+			  <th role="columnheader" >name</th>
+			  <th role="columnheader" >age</th>
+			  <th role="columnheader" >pets</th>
+			  <th role="columnheader" >cars</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr role="row" ng-repeat="human in humanlist">
+			  <td role="cell"  >{{human.name}}</td>			  
+			  <td role="cell" >{{human.age}}</td>
+			  <td role="cell" style="text-align:left;" ><a ng-href="{{human.humanlink}}">petslist</a></td>
+			  <td role="cell" style="text-align:left;" ><a ng-href="{{human.carsList}}">carslist</a></td>
+			</tr>
+		  </tbody>
+		</table>
+								
+	</div>

@@ -1,0 +1,21 @@
+	<div class="" ng-init="init()" >
+		<div class="text-center">
+			<h1> {{name}}’s Pets List</h1>
+		</div>
+		<table id="row" class="table  table-hover" >
+		  <thead>
+			<tr role="row">
+			  <th role="columnheader" >Owner name</th>
+			  <th role="columnheader" >pets Type</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr role="row" ng-repeat="pet in petlist">
+			  <td role="cell"  >{{pet.owner}}</td>			  
+			  <td role="cell" >{{pet.petsType}}</td>
+			  
+			</tr>
+		  </tbody>
+		</table>
+								
+	</div>
